@@ -8,12 +8,12 @@ public class Task implements Serializable {
 
     private int id;
     private String taskName;
-    private String desc;
+    private String description;
 
     public Task(int id, String taskName, String desc){
         this.id = id;
         this.taskName = taskName;
-        this.desc = desc;
+        this.description = description;
     }
 
     public int getId() {
@@ -25,11 +25,11 @@ public class Task implements Serializable {
     }
 
     public String getDesc() {
-        return desc;
+        return description;
     }
 
     @Override
     public String toString() {
-        return "ID: " + id + ", " + taskName + ", " + desc;
+        return "ID: " + id + ", " + taskName + ", " + description;
     }
 }
